@@ -1,0 +1,45 @@
+# Version
+version: '3.1'
+
+# Setup
+services:
+
+  # PHP
+  php:
+    depends_on:
+      - db
+    container_name: sigphp
+    image: docker-php
+    restart: always
+    ports:
+      - 5000:80
+    volumes:
+      - ./development:/var/www/html
+    environment:
+      NAME: Docker
+      MYSQL_HOST: db
+      MYSQL_PORT: 32768
+
+  # PHPMyAdmin
+  phpmyadmin:
+    depends_on:
+      - db
+    container_name: sigphpmyadmin
+    image: phpmyadmin/phpmyadmin
+    restart: always
+    ports:
+      - 5050:80
+    environment:
+      PMA_HOST: db
+
+  # MySQL
+  db:
+    container_name: sigmysql
+    image: mysql:5.7
+    restart: always
+    ports:
+      - 32768:3306
+    environment:
+      MYSQL_DATABASE: wordpress
+      MYSQL_PASSWORD: password
+      MYSQL_ROOT_PASSWORD: password
