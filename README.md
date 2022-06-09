@@ -1,5 +1,5 @@
 # docker-webdev-environtment
-Memuat lingkungan pengembangan website diatas container docker. Termasuk PHP, Apache server, Phpmyadmin, Mysql
+Contain website development environment on top of a docker container. Including PHP, Apache server, Phpmyadmin, Mysql
 
 ## How to:
 - build image as 'docker-php' on folder image
