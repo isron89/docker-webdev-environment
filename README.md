@@ -6,7 +6,9 @@ Memuat lingkungan pengembangan website diatas container docker. Termasuk PHP, Ap
 ```
 docker build -t docker-php .
 ```
-run docker-compose on folder docker-compose.yml
+- run docker-compose on folder docker-compose.yml
 ```
 docker compose up 
 ```
+
+<br>@husseinisron Thanks to all reference
