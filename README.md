@@ -10,5 +10,6 @@ docker build -t docker-php .
 ```
 docker compose up 
 ```
+- copy your web project to development folder
 
 <br>Thanks to all [reference](https://github.com/)
