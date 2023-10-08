@@ -1,4 +1,4 @@
-# docker-webdev-environtment
+# docker-webdev-environment
 Contain website development environment on top of a docker container. Including PHP, Apache server, Phpmyadmin, Mysql
 
 ## How to:
